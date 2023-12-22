@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "317775705132",
+    "project_id": "edustation-a834d",
+    "storage_bucket": "edustation-a834d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317775705132:android:40d613f040368819404d89",
+        "android_client_info": {
+          "package_name": "com.syafi.edustation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbLuEfUwmhXdv-J6xxxlkFA2AUIREU-ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
