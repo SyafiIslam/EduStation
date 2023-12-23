@@ -1,4 +1,4 @@
-package com.syafi.edustation.ui.theme
+package com.syafi.edustation.features.theme
 
 import androidx.compose.ui.graphics.Color
 
