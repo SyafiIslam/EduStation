@@ -1,4 +1,4 @@
-package com.syafi.edustation.features.theme
+package com.syafi.edustation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
@@ -15,3 +15,5 @@ val Red= Color(0xFFFE4A49)
 val Yellow= Color(0xFFFED766)
 val Grey= Color(0xFFE6E6EA)
 val White= Color(0xFFF4F4F8)
+val AbuLogin= Color(0xFF808080)
+val Samar= Color(0xFFE5E5E5)

@@ -22,8 +22,9 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
 import com.syafi.edustation.R
-import com.syafi.edustation.features.theme.Blue
-import com.syafi.edustation.features.theme.White
+import com.syafi.edustation.ui.theme.Blue
+import com.syafi.edustation.ui.theme.White
+import com.syafi.edustation.util.Routes
 import kotlinx.coroutines.delay
 
 @Composable
@@ -42,7 +43,7 @@ fun SplashScreen(navController: NavController) {
         viewModel.changeLoadingState(true)
         delay(3000)
         navController.popBackStack()
-//        navController.navigate(viewModel.nextDestination.value)
+        navController.navigate(Routes.LOGIN)
     }
 
     Box(
@@ -66,6 +67,7 @@ fun SplashScreen(navController: NavController) {
         Modifier
             .align(Alignment.BottomCenter)
             .alpha(alphaAnim.value)
-            .padding(bottom = 20.dp), color = White)
+            .padding(bottom = 20.dp), color = White
+        )
     }
 }

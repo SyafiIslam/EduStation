@@ -4,14 +4,22 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.syafi.edustation.features.login.LoginScreen
+import com.syafi.edustation.features.register.RegisterScreen
 import com.syafi.edustation.features.splash.SplashScreen
-import com.syafi.edustation.ui.Routes
+import com.syafi.edustation.util.Routes
 
 @Composable
-fun Navigation(navHostController: NavHostController) {
-    NavHost(navController = navHostController, startDestination = Routes.SPLASH) {
+fun Navigation(navController: NavHostController) {
+    NavHost(navController = navController, startDestination = Routes.SPLASH) {
         composable(Routes.SPLASH) {
-            SplashScreen(navHostController)
+            SplashScreen(navController)
+        }
+        composable(Routes.LOGIN) {
+            LoginScreen(navController = navController)
+        }
+        composable(Routes.REGISTER) {
+            RegisterScreen(navController = navController)
         }
     }
 }
